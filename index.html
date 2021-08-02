@@ -105,9 +105,11 @@
                                         <input type="text" class="form-control" id="name" required>
 
                                     </div>
+
                                     <!-- Selecting Pizza flavour -->
+                                    <div class="form-group">
                                     <label for="select">Choose your Flavor</label><br>
-                                    <select class="browser-default form-select-lg mb-4 name" id="taste" required>
+                                    <select class="browser-default form-select-lg mb-4 name form-control" id="taste" required>
                                         <option value="">select your flavor</option>
                                         <option value="Barbequed">Barbequed Chicken</option>
                                         <option value="Bufallo">Buffallo Pizza</option>
@@ -117,10 +119,12 @@
                                         <option value="Meat">Meat Pizza</option>
                                         <option value="Pepperoni">Pepperoni Pizza</option>
                                         <option value="Vegetable">Vegetable Pizza</option>
-                                    </select><br>
+                                    </select>
+                                </div>
+                                    <br>
                                     <!--selecting pizza size -->
                                     <label for="select-size">Select your Size</label><br>
-                                    <select class="browser-default form-select-lg mb-4 " id="sizer" required>
+                                    <select class="browser-default form-select-lg mb-4 form-control " id="sizer" required>
                                         <option value="">Select your pizza size</option>
                                         <option value="large">Large</option>
                                         <option value="medium">Medium</option>
@@ -128,10 +132,10 @@
                                     </select><br>
 
                                     <label for="number-of-pizza">How many would you like</label>
-                                    <input type="number" id="numbers" min="1" required>
+                                    <input type="number" id="numbers" class="form-control" min="1" required>
                                     <!-- selecting type of crust-->
                                     <label for="crust">Choose your favorite Crust</label><br>
-                                    <select class="browser-default form-select-lg mb-4" id="crusts" required>
+                                    <select class="browser-default form-select-lg mb-4 form-control" id="crusts" required>
                                         <option value="">Select your preferred crust</option>
                                         <option value="stuffed">Stuffed</option>
                                         <option value="gluten-free">Gluten-free</option>
