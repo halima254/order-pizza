@@ -11,7 +11,7 @@ function submitOrder(){
    }
    
    );
-}
+
 var sizePrice;
     if (flavour === "Barbequed" || flavour==="Bufallo"||flavour==="Margheritta"){
         if(size==="small"){
@@ -75,3 +75,11 @@ var sizePrice;
     alert(totalPrice);
    
     console.log(totalPrice);
+    $(".pname").append(flavour);
+    $(".crustype").append(crust);
+    $(".psize").append( size);
+    $(".tot").append(totalPrice);
+    $(".no").append(number);
+    $(".top").append(toppings);
+    
+    }
