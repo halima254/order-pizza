@@ -81,5 +81,4 @@ var sizePrice;
     $(".tot").append(totalPrice);
     $(".no").append(number);
     $(".top").append(toppings);
-    
     }
