@@ -1,7 +1,8 @@
+
 body{
 
     background-image: url("../assets/backwood.jpeg");
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     color: #cd6133;
 }
@@ -35,4 +36,20 @@ h2{
     background-color: #cd6133;
     color: white;
     width: 100%;
+}
+.order-list{
+    display: none;
+}
+.choose-option{
+    display: none;
+}
+.deliveries{
+    display: none;
+}
+
+.statement{
+    display: none;
+}
+.pickup-statement{
+    display: none;
 }
