@@ -59,4 +59,13 @@ var sizePrice;
         else if(crust==="gluten-free"){
             sizePrice=400;
         }
-    
+        var toppinglist = $("input[name='topping']:checked").length;
+        if(size==="small"){
+            var toppingPrice = toppinglist*50;
+        }
+        else if(size ==="medium"){
+            var toppingPrice = toppinglist*80;
+        }
+        else if(size ==="large"){
+            var toppingPrice = toppinglist*100;
+        }
