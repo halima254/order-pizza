@@ -84,6 +84,76 @@
                     <p class="pizza8">Vegetable Pizza</p>
                 </div>
             </div>
+            <div class="container-fluid bg-warning mt-5" id="make-order">
+                <div class="controls-top text-center" id="Order-now ">
+                    <h2 class="order">Order Here</h2>
+                </div>
+                <h2>Make your Orders Here!!</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <form class="form-group">
+                            <!-- Selecting Pizza flavour -->
+                            <label for="select">Choose your Flavor</label><br>
+                            <select class="browser-default form-select-lg mb-4 name" id="taste">
+                                <option value="">select your flavor</option>
+                                <option value="Barbequed">Barbequed Chicken</option>
+                                <option value="Bufallo">Buffallo Pizza</option>
+                                <option value="cheesy">Cheesy Pizza</option>
+                                <option value="Hawaiian">Hawaiian Pizza</option>
+                                <option value="Margheritta">margheritta Pizza</option>
+                                <option value="Meat">Meat Pizza</option>
+                                <option value="Pepperoni">Pepperoni Pizza</option>
+                                <option value="Vegetable">Vegetable Pizza</option>
+                            </select><br>
+                            <!--selecting pizza size -->
+                            <label for="select-size">Select your Size</label><br>
+                            <select class="browser-default form-select-lg mb-4 " id="sizer">
+                                <option value="">Select your pizza size</option>
+                                <option value="large">Large</option>
+                                <option value="medium">Medium</option>
+                                <option value="small">Small</option>
+                            </select><br>
+                            
+                            <label for="number-of-pizza">How many would you like</label>
+                            <input type="number" id="numbers" min="1">
+                            <!-- selecting type of crust-->
+                            <label for="crust">Choose your favorite Crust</label><br>
+                            <select class="browser-default form-select-lg mb-4" id="crusts">
+                                <option value="">Select your preferred crust</option>
+                                <option value="stuffed">Stuffed</option>
+                                <option value="gluten-free">Gluten-free</option>
+                                <option value="cheesy">Cheesy</option>
+                                <option value="crispy">Crispy</option>
+                            </select><br>
+                            <!-- selecting the type of topping -->
+                            <label for="toppings">Each Topping is ksh. 50</label><br>
+    
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="sausage" value="sausage" name="topping">
+                                <label class="form-check-label" for="inlineCheckbox1">Sausage</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="sausage" value="onions"name ="topping">
+                                <label class="form-check-label" for="inlineCheckbox2">Onions</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="sausage" value="bacon" name="topping">
+                                <label class="form-check-label" for="inlineCheckbox3">Bacon</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="sausage" value="green-pepper" name="topping">
+                                <label class="form-check-label" for="inlineCheckbox3">green-pepper</label>
+                              </div>
+    
+    
+                              <button type="button" class="btn btn-success" id="order" onclick="submitOrder()">Order</button>
+    
+                            </form>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 </body>
 </html>
