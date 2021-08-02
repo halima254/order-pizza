@@ -1,4 +1,4 @@
-### Peacean Pizza House
+### Peacan Pizza House
 
 ## Description
 Peacan Pizza House is a pizza Inn having different pizza varieties of pizza.<br>
@@ -21,13 +21,13 @@ The aim of this project is to test learner's knowledge of html, css and Javascri
 <li>Jquery - for form generator</li>
 
 ## contact information
-For any questions or comments regarding the website, please contact:<br>
+For any questions or comments regarding the website, please contact:
 <li>email : halima.yahya@student.moringaschool.com<li>
 <li> contact adress : +254754130800</li>
 <li>Name : Halima Cheptoo yahya</li>
 
 ## LICENCE
-Copyright 2021 || Halima Yahya
+Copyright 2021 || Halima Yahya<br>
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.

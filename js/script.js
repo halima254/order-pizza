@@ -1,3 +1,4 @@
+
 function submitOrder(){
     var flavour = document.getElementById('taste').value;
     var crust = document.getElementById('crusts').value;
@@ -69,10 +70,10 @@ var sizePrice;
         else if(size ==="large"){
             var toppingPrice = toppinglist*100;
         }
-        alert(toppingPrice)   
+          
     var price = parseInt(sizePrice+crustType+toppingPrice);
     var totalPrice =parseInt (price*number);
-    alert(totalPrice);
+    
    
     console.log(totalPrice);
     $(".pname").append(flavour);

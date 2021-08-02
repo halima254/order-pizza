@@ -1,0 +1,38 @@
+body{
+
+    background-image: url("../assets/backwood.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #cd6133;
+}
+
+.title1{
+    text-align: center;
+}
+.card{
+    display: flex;
+    width: 250px;
+    background-color: #cd6133;
+
+}
+h2{
+    color: white;
+}
+.order{
+    color: #cd6133;
+}
+.container-form{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 51px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: wheat;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.btn  {
+    background-color: #cd6133;
+    color: white;
+    width: 100%;
+}
