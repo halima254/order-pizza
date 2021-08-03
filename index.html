@@ -22,16 +22,18 @@
                 <div class="col-4">
                     <h1>PEACAN PIZAA HOUSE</h1><br><br>
                     <p><strong>We are dedicated to serve delicious pizzas made of the finest quality ingredients
-                        and affordable options to meet healty standards and at the same time taste delightful. You can
-                        never go wrong for choosing us!! </strong>
+                            and affordable options to meet healty standards and at the same time taste delightful. You
+                            can
+                            never go wrong for choosing us!! </strong>
                     </p><br><br><br><br><br><br>
                     <a href="#make-order"><button type="button" class="btn btn-lg">Order Now</button></a>
-                    
+
                 </div>
             </div>
         </div>
         <div class="container">
             <h1>Pizza Menu</h1><br>
+            <!-- displaying the pizza-menu -->
             <div class="row">
                 <div class="col-md-3">
                     <div class="card">
@@ -99,7 +101,7 @@
                     <div class="controls-top text-center" id="Order-now ">
                         <h2 class="order">Order Here</h2>
                     </div>
-                    
+               <!-- creating the order form -->
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-list">
@@ -112,34 +114,37 @@
 
                                     <!-- Selecting Pizza flavour -->
                                     <div class="form-group">
-                                    <label for="select">Choose your Flavor</label><br>
-                                    <select class="browser-default form-select-lg mb-4 name form-control" id="taste" required>
-                                        <option value="">select your flavor</option>
-                                        <option value="Barbequed">Barbequed Chicken</option>
-                                        <option value="Bufallo">Buffallo Pizza</option>
-                                        <option value="cheesy">Cheesy Pizza</option>
-                                        <option value="Hawaiian">Hawaiian Pizza</option>
-                                        <option value="Margheritta">Margheritta Pizza</option>
-                                        <option value="Meat">Meat Pizza</option>
-                                        <option value="Pepperoni">Pepperoni Pizza</option>
-                                        <option value="Vegetable">Vegetable Pizza</option>
-                                    </select>
-                                </div>
+                                        <label for="select">Choose your Flavor</label><br>
+                                        <select class="browser-default form-select-lg mb-4 name form-control" id="taste"
+                                            required>
+                                            <option value="">select your flavor</option>
+                                            <option value="Barbequed">Barbequed Chicken</option>
+                                            <option value="Bufallo">Buffallo Pizza</option>
+                                            <option value="cheesy">Cheesy Pizza</option>
+                                            <option value="Hawaiian">Hawaiian Pizza</option>
+                                            <option value="Margheritta">Margheritta Pizza</option>
+                                            <option value="Meat">Meat Pizza</option>
+                                            <option value="Pepperoni">Pepperoni Pizza</option>
+                                            <option value="Vegetable">Vegetable Pizza</option>
+                                        </select>
+                                    </div>
                                     <br>
                                     <!--selecting pizza size -->
                                     <label for="select-size">Select your Size</label><br>
-                                    <select class="browser-default form-select-lg mb-4 form-control " id="sizer" required>
+                                    <select class="browser-default form-select-lg mb-4 form-control " id="sizer"
+                                        required>
                                         <option value="">Select your pizza size</option>
                                         <option value="large">Large</option>
                                         <option value="medium">Medium</option>
                                         <option value="small">Small</option>
                                     </select><br>
-
+                             <!-- number of pizza to be ordered -->
                                     <label for="number-of-pizza">How many would you like</label>
                                     <input type="number" id="numbers" class="form-control" min="1" required>
                                     <!-- selecting type of crust-->
                                     <label for="crust">Choose your favorite Crust</label><br>
-                                    <select class="browser-default form-select-lg mb-4 form-control" id="crusts" required>
+                                    <select class="browser-default form-select-lg mb-4 form-control" id="crusts"
+                                        required>
                                         <option value="">Select your preferred crust</option>
                                         <option value="stuffed">Stuffed</option>
                                         <option value="gluten-free">Gluten-free</option>
@@ -170,8 +175,9 @@
                                         <label class="form-check-label" for="inlineCheckbox3">green-pepper</label>
                                     </div>
 
-
-                                    <button type="button" class="btn " id="order" onclick="submitOrder()">Order</button><br>
+                                  <!--  -->
+                                    <button type="button" class="btn " id="order"
+                                        onclick="submitOrder()">Order</button><br>
 
                                 </form>
                             </div>
@@ -245,7 +251,7 @@
                     <div class="pickup-statement">
                         <p>Dear <span class="customer"></span></p>
                         <p>
-                            The total amount of Pizza is Ksh. <span class="delivery-total"></span> 
+                            The total amount of Pizza is Ksh. <span class="delivery-total"></span>
                             Thank you for choosing us!
                         </p> <br>
                     </div>
