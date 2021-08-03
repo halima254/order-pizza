@@ -1,4 +1,5 @@
 function submitOrder() {
+    // assign variable names to elements' ids
     var flavour = document.getElementById('taste').value;
     var crust = document.getElementById('crusts').value;
     var size = document.getElementById('sizer').value;
@@ -12,7 +13,7 @@ function submitOrder() {
         }
 
     );
-
+    // assigning pizza prices using pizza sizes and flavours.
     var sizePrice;
     if (flavour === "Barbequed" || flavour === "Bufallo" || flavour === "Margheritta") {
         if (size === "small") {
@@ -39,16 +40,18 @@ function submitOrder() {
             sizePrice = 1400;
         }
     }
+    // assigning prices to the type of crust
     var crustType;
     if (crust === "stuffed") {
         crustType = 250;
     } else if (crust === "cheesy") {
         crustType = 350;
     } else if (crust === "crispy") {
-       crustType = 200;
+        crustType = 200;
     } else if (crust === "gluten-free") {
         crustType = 400;
     }
+    // assigning prices to toppings considering  the pizza size
     var toppinglist = $("input[name='topping']:checked").length;
     if (size === "small") {
         var toppingPrice = toppinglist * 50;
@@ -57,12 +60,13 @@ function submitOrder() {
     } else if (size === "large") {
         var toppingPrice = toppinglist * 100;
     }
-
+    // perfoming calculations of the totals
     var price = parseInt(sizePrice + crustType + toppingPrice);
     var totalPrice = parseInt(price * number);
+    // displaying feedback form
     $(".delivery-total").text(totalPrice);
-   $(".customer").text(name);
-
+    $(".customer").text(name);
+    // displaying form details in the form
     console.log(totalPrice);
     $(".pname").append(flavour);
     $(".crustype").append(crust);
@@ -71,37 +75,34 @@ function submitOrder() {
     $(".no").append(number);
     $(".top").append(toppings);
 }
-$(document).ready(function(){
-    $("#order").click(function(){
+//  JQuery for hiding the form list then displaying the order list when the order button is clicked.
+$(document).ready(function () {
+    $("#order").click(function () {
         $(".form-list").hide(1000);
         $(".order-list").show(1000);
     });
-    $("#checkout").click(function(){
+    // JQuery for hiding the order list then showing the delivery options when the checkout button with id checkout is clicked.
+    $("#checkout").click(function () {
         $(".order-list").hide();
         $(".choose-option").show();
     });
 
-    $("#request-delivery").click(function(){
+    $("#request-delivery").click(function () {
         $(".choose-option").hide();
         $(".deliveries").show();
     });
-$("#pick-up").click(function(){
-    $(".choose-option").hide();
-    $(".pickup-statement").show();
-})
-   
+    $("#pick-up").click(function () {
+        $(".choose-option").hide();
+        $(".pickup-statement").show();
+    })
+
 });
-// function submitOrder()
-//     $(".form-list").hide(1000);
-//     $(".order-list").show(1000);
-// }
-function deliveryConfirmed(){
+// function that gets the name and phone number of a customer then displays them in a text
+function deliveryConfirmed() {
     var place = document.getElementById("place").value;
     var phone = document.getElementById("phone").value;
-
-
     $(".location").text(place);
-$(".phone-no").text(phone);
- $(".deliveries").hide();
- $(".statement").show();
+    $(".phone-no").text(phone);
+    $(".deliveries").hide();
+    $(".statement").show();
 }

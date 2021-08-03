@@ -2,10 +2,9 @@
 
     src: ("assets/KaushanScript-Regular.ttf");
     font-family: pizzas;
-    /* src: ("assets/Playball-Regular.ttf");
-    font-family: pizza; */
+  
 }
-
+/* Styling entire body */
 body {
 
     background-image: url("../assets/backwood.jpeg");
@@ -19,11 +18,12 @@ body {
     text-align: center;
     font-family: pizza;
 }
-
+/* styling the cards */
 .card {
-    display: flex;
+    
     width: 250px;
     background-color: #cd6133;
+    color: white;
 
 }
 
@@ -37,31 +37,18 @@ h2 {
     font-family: pizza;
 }
 
-h4 {
-    color: white;
-}
 
 .order {
     color: #cd6133;
 }
 
-.container-form {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 51px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: wheat;
-    border-radius: 2%;
-    display: flex;
-    flex-direction: column;
-}
-
+/* styling the button */
 .btn {
     background-color: #cd6133;
     color: white;
     width: 100%;
 }
-
+/* styling the form-classes display to none to be displayed JQuery */
 .order-list {
     display: none;
 }
@@ -81,7 +68,7 @@ h4 {
 .pickup-statement {
     display: none;
 }
-
+/* styling the footer */
 footer {
     background-color: #cd6133;
     color: white;

@@ -20,12 +20,13 @@
                     <img src="./assets/pizzaintro1.jpeg" alt="Pizza" width="100%">
                 </div>
                 <div class="col-4">
-                    <h1>PEACAN PIZAA HOUSE</h1><br><br>
-                    <p><strong>We are dedicated to serve delicious pizzas made of the finest quality ingredients
+                    <h1>PEACAN PIZZA HOUSE</h1><br><br>
+                    <p><strong>We are dedicated to serve you delicious pizzas made from the finest, quality ingredients
                             and affordable options to meet healty standards and at the same time taste delightful. You
                             can
                             never go wrong for choosing us!! </strong>
                     </p><br><br><br><br><br><br>
+                    <!--creating order button and using it as a link to the order here section -->
                     <a href="#make-order"><button type="button" class="btn btn-lg">Order Now</button></a>
 
                 </div>
@@ -101,7 +102,7 @@
                     <div class="controls-top text-center" id="Order-now ">
                         <h2 class="order">Order Here</h2>
                     </div>
-               <!-- creating the order form -->
+                    <!-- creating the order form -->
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-list">
@@ -138,7 +139,7 @@
                                         <option value="medium">Medium</option>
                                         <option value="small">Small</option>
                                     </select><br>
-                             <!-- number of pizza to be ordered -->
+                                    <!-- number of pizza to be ordered -->
                                     <label for="number-of-pizza">How many would you like</label>
                                     <input type="number" id="numbers" class="form-control" min="1" required>
                                     <!-- selecting type of crust-->
@@ -152,7 +153,7 @@
                                         <option value="crispy">Crispy</option>
                                     </select><br>
                                     <!-- selecting the type of topping -->
-                                    <label for="toppings">Each Topping is ksh. 50</label><br>
+                                    <label for="toppings">Toppings defer with the Pizza Size</label><br>
 
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" id="sausage" value="sausage"
@@ -175,7 +176,7 @@
                                         <label class="form-check-label" for="inlineCheckbox3">green-pepper</label>
                                     </div>
 
-                                  <!--  -->
+                                    <!-- the order button -->
                                     <button type="button" class="btn " id="order"
                                         onclick="submitOrder()">Order</button><br>
 
@@ -183,7 +184,9 @@
                             </div>
                         </div>
                         <div class="col-md-8">
+
                             <div class="order-list">
+                                <!-- table to display customer's orders -->
                                 <table class="table table-dark">
                                     <thead>
                                         <tr>
@@ -208,18 +211,19 @@
 
                                     </tbody>
                                 </table>
-
+                                <!-- checkout-button that would lead you to either pick your orders or request for delivey -->
                                 <button type="button" id="checkout" class="btn btn-lg">CheckOut</button><br><br>
 
                             </div>
                         </div>
                     </div>
-
+                    <!-- buttons for pick order or request for delivery -->
                     <div class="choose-option">
                         <button type="button" id="pick-up" class="btn btn-md">Pick-Up</button> <br><br>
                         <button type="button" id="request-delivery" class="btn btn-md">Delivery</button><br><br>
 
                     </div>
+                    <!-- delivery form -->
                     <div class="deliveries">
                         <form>
                             <div class="form-group">
@@ -232,12 +236,12 @@
                                 <input type="number" class="form-control" id="phone" required min="1"
                                     placeholder="+2547******">
                             </div>
-
+                            <!--button that displays feedback statement from peacan pizza when clicked -->
                             <button type="button" class="btn" onclick="deliveryConfirmed()">Submit</button><br><br>
                         </form>
 
                     </div>
-
+                    <!-- feedback statement from peacan-pizza house for the delivery option -->
                     <div class="statement">
                         <p>Dear <span class="customer"></span></p>
                         <p> The cost of delivery to <span class="location"></span>
@@ -247,7 +251,7 @@
                             Thank you for choosing us!
                         </p>
                     </div><br>
-
+                    <!-- feedback statement for the pick-up order -->
                     <div class="pickup-statement">
                         <p>Dear <span class="customer"></span></p>
                         <p>
@@ -264,6 +268,7 @@
 </body>
 <script src="./js/jquery-3.6.0.js"></script>
 <script src="./js/script.js"></script>
+<!-- creating footer section -->
 <footer>
     <p>Copyright@2021 || Created and designed by Halima Yahya</p>
 </footer>
